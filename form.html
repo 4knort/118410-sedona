@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sedona-form</title>
+</head>
+<body>
+  <div class="container">
+    <header class="main-header">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Информация</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Оставь отзыв</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Блог шерифа</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Гостиницы</a></li>
+        </ul>
+        <a class="main-logo" href="#"><img src="" alt=""></a>
+        <button class="main-navigation-button"></button>
+      </nav>
+    </header>
+    <main class="form-content">
+      <div class="inner-promo"><img src="" alt=""></div>
+      <div class="top-form-intro">
+        <h1 class="top-form-intro__title">
+          Оставьте свой отзыв
+        </h1>
+        <p>
+          Помогите нашим отелям стать лучше! оставьте отзыв о них,
+          а также о посещенных вами достопримечательностях
+        </p>
+      </div>
+      <form action="echo/">
+        <div class="form-introduce">
+          <div>Представьтесь, пожалуйста:</div>
+          <label for="">Фамилия: <span>*</span></label>
+          <input type="text" placeholder="Иванов">
+          <label for="">Имя: <span>*</span></label>
+          <input type="text" placeholder="Петр">
+          <label for="">Отчество:</label>
+          <input type="text" placeholder="Александрович">
+        </div>
+        <div class="form-impression">
+          <div>Ваше Общее впечатление:</div>
+          <ul>
+            <li>
+              <input type="radio" checked name="impression">
+              <label for="">Скорее положительное</label>
+            </li>
+            <li>
+              <input type="radio" name="impression">
+              <label for="">Скорее отрицательное</label>
+            </li>
+          </ul>
+        </div>
+        <div class="form-travel-date">
+        <label for="">Дата приезда: <span>*</span></label>
+          <input type="text" placeholder="4 июля 2015">
+          <label for="">Длительность пребывания: <span>*</span></label>
+          <div class="counter">
+            <a class="counter__btn counter__btn--minus" href="#"></a>
+            <input class="counter__input" type="text" value="14">
+            <a class="counter__btn counter__btn--plus" href="#"></a>
+          </div>
+          <label for="">Дата отъезда: <span>*</span></label>
+          <input type="text" placeholder="28 июля 2015">
+        </div>
+        <div class="form-amount">
+          <label for="">Количество путешественников: <span>*</span></label>
+          <div class="counter">
+            <a class="counter__btn counter__btn--minus" href="#"></a>
+            <input class="counter__input" type="text" value="2">
+            <a class="counter__btn counter__btn--plus" href="#"></a>
+          </div>
+          <div class="form-amount__item clearfix">
+            <div class="form-amount__number">
+              <div>№</div>
+              <div>1</div>
+            </div>
+            <div class="form-amount__item-description">
+              <label for="">Фамилия: <span>*</span></label>
+              <input type="text" placeholder="Иванов">
+              <label for="">Имя: <span>*</span></label>
+              <input type="text" placeholder="Петр">
+              <label for="">Отчество:</label>
+              <input type="text" placeholder="Александрович">
+            </div>
+            <div class="form-amount__item clearfix">
+              <div class="form-amount__number">
+                <div>№</div>
+                <div>2</div>
+              </div>
+              <div class="form-amount__item-description">
+                <label for="">Фамилия: <span>*</span></label>
+                <input type="text" placeholder="Иванов">
+                <label for="">Имя: <span>*</span></label>
+                <input type="text" placeholder="Петр">
+                <label for="">Отчество:</label>
+                <input type="text" placeholder="Александрович">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-visited">
+          <div>
+            Посещенные достопримечательности:
+          </div>
+          <ul>
+            <li>
+              <input type="checkbox">
+              <label for="">Мост Дьявола</label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label for="">Слайд-парк</label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label for="">Гора-Колокол</label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label for="">Красные скалы</label>
+            </li>
+          </ul>
+        </div>
+        <div class="form-photo">
+          <input type="file">
+          <div class="form-photo__item">
+            <img src="" alt="">
+            <button></button>
+          </div>
+          <div class="form-photo__item">
+            <img src="" alt="">
+            <button></button>
+          </div>
+          <div class="form-photo__item">
+            <img src="" alt="">
+            <button></button>
+          </div>
+          <div class="form-photo__item">
+            <img src="" alt="">
+            <button></button>
+          </div>
+          <div class="form-photo__item">
+            <img src="" alt="">
+            <button></button>
+          </div>
+          <div class="form-photo__item">
+            <img src="" alt="">
+            <button></button>
+          </div>
+          <div class="form-photo__item">
+            <img src="" alt="">
+            <button></button>
+          </div>
+        </div>
+        <a href="#" class="send-btn">Отправить отзыв</a>
+      </form>
+    </main>
+    <footer class="main-footer">
+      <a href="#" class="visit">#visitsedona</a>
+      <div class="social">
+        <a href="#" class="social__btn social__btn--twitter"></a>
+        <a href="#" class="social__btn social__btn--facebook"></a>
+        <a href="#" class="social__btn social__btn--youtube"></a>
+      </div>
+      <div class="author">
+        Разработано
+        <a class="author__link" href="#"></a>
+      </div>
+    </footer>
+    <div class="module-success">
+      <h2 class="module-success_title">Ваш отзыв отправлен!</h2>
+      <p>
+        Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+        В ближайшее время мы опубликуем его на сайте.
+      </p>
+      <a href="#" class="module-success-btn">ЗАКРЫТЬ ОКНО</a>
+    </div>
+    <div class="module-failure">
+      <h2 class="module-failure_title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+      <p>
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+      <a href="#" class="module-failure-btn">ок</a>
+    </div>
+  </div>
+</body>
+</html>
