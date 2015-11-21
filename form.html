@@ -24,48 +24,50 @@
         <h1 class="top-form-intro__title">
           Оставьте свой отзыв
         </h1>
-        <p>
+        <p class="top-form-intro__text">
           Помогите нашим отелям стать лучше! оставьте отзыв о них,
           а также о посещенных вами достопримечательностях
         </p>
       </div>
       <form action="echo/">
         <div class="form-introduce">
-          <div>Представьтесь, пожалуйста:</div>
-          <label for="">Фамилия: <span>*</span></label>
-          <input type="text" placeholder="Иванов">
-          <label for="">Имя: <span>*</span></label>
-          <input type="text" placeholder="Петр">
-          <label for="">Отчество:</label>
-          <input type="text" placeholder="Александрович">
+          <h2 class="form-title">Представьтесь, пожалуйста:</h2>
+          <label class="form-label" for="last-name">Фамилия: <span class="form-label__required">*</span></label>
+          <input class="form-input" id="last-name" type="text" placeholder="Иванов">
+          <label class="form-label" for="name">Имя: <span class="form-label__required">*</span></label>
+          <input class="form-input" id="name" type="text" placeholder="Петр">
+          <label class="form-label" for="patronymic">Отчество:</label>
+          <input class="form-input" id="patronymic" type="text" placeholder="Александрович">
         </div>
         <div class="form-impression">
-          <div>Ваше Общее впечатление:</div>
+          <h2 class="form-title">Ваше Общее впечатление:</h2>
           <ul>
             <li>
-              <input type="radio" checked name="impression">
-              <label for="">Скорее положительное</label>
+              <input class="form-radio" type="radio" id="radio-positive" checked name="impression">
+              <label class="label-radio" for="radio-positive">Скорее положительное</label>
             </li>
             <li>
-              <input type="radio" name="impression">
-              <label for="">Скорее отрицательное</label>
+              <input class="form-radio" type="radio"  id="radio-negative" name="impression">
+              <label class="label-radio" for="radio-negative">Скорее отрицательное</label>
             </li>
           </ul>
         </div>
         <div class="form-travel-date">
-        <label for="">Дата приезда: <span>*</span></label>
-          <input type="text" placeholder="4 июля 2015">
-          <label for="">Длительность пребывания: <span>*</span></label>
+          <h2 class="form-title">Даты вашей поездки:</h2>
+          <label class="form-label" for="">Дата приезда: <span class="form-label__required">*</span></label>
+          <input class="form-input" type="text" placeholder="4 июля 2015">
+          <label class="form-label" for="">Длительность пребывания: <span class="form-label__required">*</span></label>
           <div class="counter">
             <a class="counter__btn counter__btn--minus" href="#"></a>
             <input class="counter__input" type="text" value="14">
             <a class="counter__btn counter__btn--plus" href="#"></a>
           </div>
-          <label for="">Дата отъезда: <span>*</span></label>
-          <input type="text" placeholder="28 июля 2015">
+          <label class="form-label" for="">Дата отъезда: <span class="form-label__required">*</span></label>
+          <input class="form-input form-input--border" type="text" placeholder="28 июля 2015">
         </div>
         <div class="form-amount">
-          <label for="">Количество путешественников: <span>*</span></label>
+          <h2 class="form-title">Кол-во путешественников:</h2>
+          <label class="form-label" for="">Количество путешественников: <span class="form-label__required">*</span></label>
           <div class="counter">
             <a class="counter__btn counter__btn--minus" href="#"></a>
             <input class="counter__input" type="text" value="2">
@@ -73,57 +75,58 @@
           </div>
           <div class="form-amount__item clearfix">
             <div class="form-amount__number">
-              <div>№</div>
-              <div>1</div>
+              <div class="number-icon">№</div>
+              <div class="form-number">1</div>
             </div>
             <div class="form-amount__item-description">
-              <label for="">Фамилия: <span>*</span></label>
-              <input type="text" placeholder="Иванов">
-              <label for="">Имя: <span>*</span></label>
-              <input type="text" placeholder="Петр">
-              <label for="">Отчество:</label>
-              <input type="text" placeholder="Александрович">
+              <label class="form-label" for="last-name1">Фамилия: <span class="form-label__required">*</span></label>
+              <input class="form-input" id="last-name1" type="text" placeholder="Иванов">
+              <label class="form-label" for="name1">Имя: <span class="form-label__required">*</span></label>
+              <input class="form-input" id="name1" type="text" placeholder="Петр">
+              <label class="form-label" for="patronymic1">Отчество:</label>
+              <input class="form-input" id="patronymic1" type="text" placeholder="Александрович">
             </div>
             <div class="form-amount__item clearfix">
               <div class="form-amount__number">
-                <div>№</div>
-                <div>2</div>
+                <div class="number-icon">№</div>
+                <div class="form-number">2</div>
               </div>
               <div class="form-amount__item-description">
-                <label for="">Фамилия: <span>*</span></label>
-                <input type="text" placeholder="Иванов">
-                <label for="">Имя: <span>*</span></label>
-                <input type="text" placeholder="Петр">
-                <label for="">Отчество:</label>
-                <input type="text" placeholder="Александрович">
+                <label class="form-label" for="last-name2">Фамилия: <span class="form-label__required">*</span></label>
+                <input class="form-input" id="last-name2" type="text" placeholder="Иванов">
+                <label class="form-label" for="name2">Имя: <span class="form-label__required">*</span></label>
+                <input class="form-input" id="name2" type="text" placeholder="Петр">
+                <label class="form-label" for="patronymic2">Отчество:</label>
+                <input class="form-input" id="patronymic2" type="text" placeholder="Александрович">
               </div>
             </div>
           </div>
         </div>
         <div class="form-visited">
-          <div>
+          <h2 class="form-title">
             Посещенные достопримечательности:
-          </div>
+          </h2>
           <ul>
             <li>
-              <input type="checkbox">
-              <label for="">Мост Дьявола</label>
+              <input class="form-checkbox" id="bridge" type="checkbox">
+              <label class="label-checkbox" for="bridge">Мост Дьявола</label>
             </li>
             <li>
-              <input type="checkbox">
-              <label for="">Слайд-парк</label>
+              <input class="form-checkbox" id="park" type="checkbox">
+              <label class="label-checkbox" for="park">Слайд-парк</label>
             </li>
             <li>
-              <input type="checkbox">
-              <label for="">Гора-Колокол</label>
+              <input class="form-checkbox" id="mountain" type="checkbox">
+              <label class="label-checkbox" for="mountain">Гора-Колокол</label>
             </li>
             <li>
-              <input type="checkbox">
-              <label for="">Красные скалы</label>
+              <input class="form-checkbox" id="rock" type="checkbox">
+              <label class="label-checkbox" for="rock">Красные скалы</label>
             </li>
           </ul>
         </div>
         <div class="form-photo">
+        <h2 class="form-title">Загрузите фотографии:</h2>
           <input type="file">
           <div class="form-photo__item">
             <img src="" alt="">
@@ -164,22 +167,18 @@
         <a href="#" class="social__btn social__btn--facebook"></a>
         <a href="#" class="social__btn social__btn--youtube"></a>
       </div>
-      <div class="author">
-        Разработано
-        <a class="author__link" href="#"></a>
-      </div>
     </footer>
     <div class="module-success">
-      <h2 class="module-success_title">Ваш отзыв отправлен!</h2>
-      <p>
+      <h2 class="module-success__title">Ваш отзыв отправлен!</h2>
+      <p class="module-success__text">
         Спасибо за ваше участие, ваш отзыв уже поступил к нам.
         В ближайшее время мы опубликуем его на сайте.
       </p>
       <a href="#" class="module-success-btn">ЗАКРЫТЬ ОКНО</a>
     </div>
     <div class="module-failure">
-      <h2 class="module-failure_title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
-      <p>
+      <h2 class="module-failure__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+      <p class="module-success__text">
         Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
       </p>
       <a href="#" class="module-failure-btn">ок</a>
