@@ -1,0 +1,44 @@
+.features-item{
+  padding-left: 69px;
+  text-align: left;
+  margin-bottom: 32px;
+  position: relative;
+  &:nth-child(1):before{
+    content: "";
+    position: absolute;
+    background: url(../img/sprite.png) no-repeat -278px -10px;
+    width: 37px;
+    height: 37px;
+    top: -11px;
+    left: 21px;
+  }
+  &:nth-child(2):before{
+    content: "";
+    position: absolute;
+    background: url(../img/sprite.png) no-repeat -335px -10px;
+    width: 37px;
+    height: 37px;
+    top: -11px;
+    left: 21px;
+  }
+  &:nth-child(3):before{
+    content: "";
+    position: absolute;
+    background: url(../img/sprite.png) no-repeat -392px -10px;
+    width: 37px;
+    height: 37px;
+    top: -11px;
+    left: 21px;
+  }
+}
+.features-item__title{
+  font-size: @font-title;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 19px;
+}
+.features-item__text{
+  color: @grey;
+  line-height: 21px;
+  width: 210px;
+}
