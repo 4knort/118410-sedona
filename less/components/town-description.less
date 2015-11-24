@@ -1,0 +1,45 @@
+.town-description{
+  color: @white;
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 40px;
+  background: url(../img/top-block-line.png) no-repeat left top;
+  background-size: 100%;
+  background-color: @blue;
+  &__title{
+    font-size: @font-title;
+    font-weight: bold;
+  }
+  &__reason{
+    position: relative;
+    width: 50px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    &:before{
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 9px;
+      top: 8px;
+      left: 0px;
+      background-color: @white;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 9px;
+      top: 8px;
+      right: 0px;
+      background-color: @white;
+    }
+  }
+  &__text{
+    width: 260px;
+    margin: 0 auto;
+    line-height: @line-height;
+  }
+}
+
+
+
