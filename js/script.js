@@ -1,5 +1,5 @@
-var navBtn = document.querySelector (".main-navigation-button-js");
-var mainNav = document.querySelector(".main-nav-js");
+var navBtn = document.querySelector (".js-main-navigation-button");
+var mainNav = document.querySelector(".js-main-nav");
 
 
 navBtn.addEventListener("click", function(event){

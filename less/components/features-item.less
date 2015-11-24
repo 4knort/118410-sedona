@@ -3,7 +3,7 @@
   text-align: left;
   margin-bottom: 32px;
   position: relative;
-  &:nth-child(1):before{
+  &--house:before{
     content: "";
     position: absolute;
     background: url(../img/sprite.png) no-repeat -278px -10px;
@@ -12,7 +12,7 @@
     top: -11px;
     left: 21px;
   }
-  &:nth-child(2):before{
+  &--food:before{
     content: "";
     position: absolute;
     background: url(../img/sprite.png) no-repeat -335px -10px;
@@ -21,7 +21,7 @@
     top: -11px;
     left: 21px;
   }
-  &:nth-child(3):before{
+  &--gifts:before{
     content: "";
     position: absolute;
     background: url(../img/sprite.png) no-repeat -392px -10px;
@@ -30,15 +30,15 @@
     top: -11px;
     left: 21px;
   }
-}
-.features-item__title{
-  font-size: @font-title;
-  font-weight: bold;
-  margin: 0;
-  margin-bottom: 19px;
-}
-.features-item__text{
-  color: @grey;
-  line-height: 21px;
-  width: 210px;
+  &__title{
+    font-size: @font-title;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 19px;
+  }
+  &__text{
+    color: @grey;
+    line-height: @line-height;
+    width: 210px;
+  }
 }

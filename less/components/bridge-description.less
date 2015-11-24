@@ -4,35 +4,37 @@
   padding-top: 31px;
   padding-bottom: 40px;
   background-color: @blue;
-}
-.bridge-description__title{
-  font-size: @font-title;
-  font-weight: bold;
-}
-.bridge-description__reason{
-  position: relative;
-  &:before{
+  &__title{
+    font-size: @font-title;
+    font-weight: bold;
+  }
+  &__reason{
+    position: relative;
+    width: 50px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    &:before{
     content: "";
     position: absolute;
     height: 2px;
     width: 9px;
     top: 8px;
-    left: 134px;
+    left: 0px;
     background-color: @white;
-  }
-  &:after{
+    }
+    &:after{
     content: "";
     position: absolute;
     height: 2px;
     width: 9px;
     top: 8px;
-    right: 134px;
+    right: 0px;
     background-color: @white;
+    }
   }
-}
-.bridge-description__text{
-  width: 260px;
-  margin: 0 auto;
-  line-height: 21px;
-
+  &__text{
+    width: 260px;
+    margin: 0 auto;
+    line-height: @line-height;
+  }
 }
