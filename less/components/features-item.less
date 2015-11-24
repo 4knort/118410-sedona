@@ -1,0 +1,44 @@
+.features-item{
+  padding-left: 69px;
+  text-align: left;
+  margin-bottom: 32px;
+  position: relative;
+  &--house:before{
+    content: "";
+    position: absolute;
+    background: url(../img/sprite.png) no-repeat -278px -10px;
+    width: 37px;
+    height: 37px;
+    top: -11px;
+    left: 21px;
+  }
+  &--food:before{
+    content: "";
+    position: absolute;
+    background: url(../img/sprite.png) no-repeat -335px -10px;
+    width: 37px;
+    height: 37px;
+    top: -11px;
+    left: 21px;
+  }
+  &--gifts:before{
+    content: "";
+    position: absolute;
+    background: url(../img/sprite.png) no-repeat -392px -10px;
+    width: 37px;
+    height: 37px;
+    top: -11px;
+    left: 21px;
+  }
+  &__title{
+    font-size: @font-title;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 19px;
+  }
+  &__text{
+    color: @grey;
+    line-height: @line-height;
+    width: 210px;
+  }
+}
