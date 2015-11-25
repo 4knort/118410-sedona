@@ -3,27 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>Sedona-post</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="container">
     <header class="main-header">
-      <nav class="main-nav">
+      <nav class="main-nav js-main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="#">Информация</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Оставь отзыв</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Блог шерифа</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Гостиницы</a></li>
         </ul>
-        <a class="main-logo" href="#"><img src="" alt=""></a>
-        <button class="main-navigation-button"></button>
       </nav>
+      <div class="logo-wrap">
+        <a class="main-logo" href="#"><img src="img/logo.png" alt="logo"></a>
+      </div>
+      <button class="main-navigation-button js-main-navigation-button"></button>
     </header>
     <main class="post-content">
-      <div class="inner-promo"><img src="" alt=""></div>
+      <div class="inner-promo"><img src="img/inner-intro.png" alt="Sedona" width="100%"></div>
       <div class="top-blog-intro">
         <h1 class="top-blog-intro__title">Блог Шерифа</h1>
         <p class="top-blog-intro__text">
-          Седона удивительный город! Горы здесь красного цвета,
+          Седона удивительный город!
+          Горы здесь красного цвета,
           а местный шериф ведет блог и общается на форумах.
         </p>
         <div class="top-blog-intro__tags">
@@ -59,13 +64,15 @@
         <blockquote>Самый свирепый из зверей —теперь мы знаем — это человек,он убивает даже если не голоден.<span>Адриано Челентано</span></blockquote>
       </div>
       <div class="post-navigation">
-        <a class="prev-btn" href="#">Пред</a>
-        <a class="next-btn" href="#">След</a>
-        <a class="back-btn" href="#">Назад к списку</a>
+        <a class="post-btn" href="#">Пред</a>
+        <a class="post-btn" href="#">След</a>
+        <a class="post-btn post-btn--back" href="#">Назад к списку</a>
       </div>
     </main>
     <footer class="main-footer">
-      <a href="#" class="visit">#visitsedona</a>
+      <div class="visit-wrap">
+        <a href="" class="visit">#visitsedona</a>
+      </div>
       <div class="social">
         <a href="#" class="social__btn social__btn--twitter"></a>
         <a href="#" class="social__btn social__btn--facebook"></a>
@@ -77,5 +84,6 @@
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
