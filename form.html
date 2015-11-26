@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Sedona-form</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -61,7 +61,7 @@
           <label class="form-label" for="">Дата приезда: <span class="form-label__required">*</span></label>
           <input class="form-input" type="text" placeholder="4 июля 2015">
           <label class="form-label" for="">Длительность пребывания: <span class="form-label__required">*</span></label>
-          <div class="counter">
+          <div class="counter counter--days">
             <a class="counter__btn counter__btn--minus" href="#"></a>
             <input class="counter__input" type="text" value="14">
             <a class="counter__btn counter__btn--plus" href="#"></a>
@@ -72,7 +72,7 @@
         <div class="form-amount clearfix">
           <h2 class="form-title">Кол-во путешественников:</h2>
           <label class="form-label" for="">Количество путешественников: <span class="form-label__required">*</span></label>
-          <div class="counter">
+          <div class="counter counter--men">
             <a class="counter__btn counter__btn--minus" href="#"></a>
             <input class="counter__input" type="text" value="2">
             <a class="counter__btn counter__btn--plus" href="#"></a>
@@ -131,7 +131,8 @@
         </div>
         <div class="form-photo">
         <h2 class="form-title">Загрузите фотографии:</h2>
-          <input class="input-file" type="file">
+          <label class="label-file" for="file">Выбрать фотографии</label>
+          <input class="input-file" id="file" type="file">
           <div class="form-photo__item">
             <img src="img/photo1.jpg" alt="">
             <button class="form-photo__btn"></button>

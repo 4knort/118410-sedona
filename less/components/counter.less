@@ -1,6 +1,7 @@
 .counter{
   font-size: 0;
   margin-bottom: 20px;
+  position: relative;
   &__btn{
     display: inline-block;
     vertical-align: top;
@@ -54,5 +55,25 @@
     width: 75px;
     margin-right: 6px;
     position: relative;
+  }
+  &--days:after{
+    content: "дн.";
+    position: absolute;
+    top: 22px;
+    left: 166px;
+    font-size: @font-title;
+    font-weight: small-caps;
+    color: #a9a9a9;
+    text-transform: none;
+  }
+  &--men:after{
+    content: "чел.";
+    position: absolute;
+    top: 22px;
+    left: 166px;
+    font-size: @font-title;
+    color: #a9a9a9;
+    font-weight: small-caps;
+    text-transform: none;
   }
 }
