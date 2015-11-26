@@ -3,29 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>Sedon-blog</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="container">
     <header class="main-header">
-      <nav class="main-nav">
+      <nav class="main-nav js-main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="#">Информация</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Оставь отзыв</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Блог шерифа</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Гостиницы</a></li>
         </ul>
-        <a class="main-logo" href="#"><img src="" alt=""></a>
-        <button class="main-navigation-button"></button>
       </nav>
+      <div class="logo-wrap">
+        <a class="main-logo" href="#"><img src="img/logo.png" alt="logo"></a>
+      </div>
+      <button class="main-navigation-button js-main-navigation-button"></button>
     </header>
     <main class="blog-content">
-      <div class="inner-promo"><img src="" alt=""></div>
+      <div class="inner-promo"><img src="img/inner-intro.png" alt="Sedona" width="100%"></div>
       <div class="top-blog-intro">
         <h1 class="top-blog-intro__title">
           Блог Шерифа
         </h1>
         <p class="top-blog-intro__text">
-          Седона удивительный город! Горы здесь красного цвета,
+          Седона удивительный город!
+          Горы здесь красного цвета,
           а местный шериф ведет блог и общается на форумах.
         </p>
       </div>
@@ -44,7 +49,7 @@
         </div>
         <div class="post-preview">
           <h2 class="post-preview__title">
-            принят антитабачный закон штата
+            Принят антитабачный закон штата
           </h2>
           <p class="post-preview__content">
             Уважаемые туристы, пожалуйста не забывайте, что курение сигарет и сигар в общественных местах города Седона категорически запрещено.
@@ -103,7 +108,7 @@
           </div>
         </div>
         <div class="blog-pagination__buttons">
-          <a class="blog-pagination__button" href="#">1</a>
+          <a class="blog-pagination__button blog-pagination__button--active" href="#">1</a>
           <a class="blog-pagination__button" href="#">2</a>
           <a class="blog-pagination__button" href="#">3</a>
           <a class="blog-pagination__button" href="#">4</a>
@@ -112,17 +117,20 @@
       </div>
     </main>
     <footer class="main-footer">
-      <a href="#" class="visit">#visitsedona</a>
+      <div class="visit-wrap">
+        <a href="" class="visit">#visitsedona</a>
+      </div>
       <div class="social">
         <a href="#" class="social__btn social__btn--twitter"></a>
         <a href="#" class="social__btn social__btn--facebook"></a>
         <a href="#" class="social__btn social__btn--youtube"></a>
       </div>
       <div class="author">
-        РАЗРАБОТАНО
+        Разработано
         <a class="author__link" href="#"></a>
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 </html>
