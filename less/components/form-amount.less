@@ -16,3 +16,30 @@
     float: left;
   }
 }
+
+@media(min-width: @mobile){
+  .form-amount{
+    font-size: 0;
+    border-bottom: none;
+    margin-bottom: 45px;
+    &__item{
+    margin-bottom: 16px;
+    &--first{
+      margin-top: 29px;
+    }
+  }
+    &__number{
+      float: none;
+      width: auto;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 5px;
+    }
+    &__item-description{
+      width: 580px;
+      float: none;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}

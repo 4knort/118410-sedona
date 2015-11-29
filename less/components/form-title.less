@@ -11,3 +11,58 @@
     margin-bottom: 25px;
   }
 }
+
+@media(min-width: @mobile){
+  .form-title{
+    font-size: @font-big;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 29px;
+    width: 310px;
+    &:after{
+      content: "";
+      position: absolute;
+      width: 125px;
+      height: 1px;
+      top: 13px;
+      right: -180px;
+      background-color: #dbdbdb;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      width: 125px;
+      height: 1px;
+      top: 13px;
+      left: -180px;
+      background-color: #dbdbdb;
+    }
+    &--visited{
+      margin-bottom: 58px;
+      &:before{
+        content: "";
+        position: absolute;
+        width: 125px;
+        height: 1px;
+        top: 25px;
+        left: -180px;
+        background-color: #dbdbdb;
+      }
+      &:after{
+        content: "";
+        position: absolute;
+        width: 125px;
+        height: 1px;
+        top: 25px;
+        right: -180px;
+        background-color: #dbdbdb;
+      }
+    }
+    &--radio{
+      margin-bottom: 57px;
+    }
+    &--photo{
+      margin-bottom: 57px;
+    }
+  }
+}

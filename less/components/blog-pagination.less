@@ -17,8 +17,30 @@
     text-decoration: none;
     margin-right: 2.5%;
     margin-bottom: 15px;
+    &--active{
+      background-color: #e5e5e5;
+      color: #000;
+    }
     &:last-child{
       margin-right: 0;
+    }
+    &__title{
+      display: none;
+    }
+  }
+}
+
+
+@media(min-width: @mobile){
+  .blog-pagination{
+    font-size: 0;
+    &__title{
+      display: inline-block;
+      vertical-align: top;
+      font-size: @font-big;
+      font-weight: bold;
+      padding: 20px 0;
+      margin-right: 10%;
     }
   }
 }
