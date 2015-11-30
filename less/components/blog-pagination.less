@@ -34,6 +34,7 @@
 @media(min-width: @mobile){
   .blog-pagination{
     font-size: 0;
+    position: relative;
     &__title{
       display: inline-block;
       vertical-align: top;
@@ -41,6 +42,15 @@
       font-weight: bold;
       padding: 20px 0;
       margin-right: 10%;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 88%;
+      background-color: #dbdbdb;
+      top: 0;
+      left: 50%;
     }
   }
 }
