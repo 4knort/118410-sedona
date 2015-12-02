@@ -66,3 +66,26 @@
     }
   }
 }
+
+@media(min-width: @tablet){
+  .form-title{
+    &:after{
+      content: "";
+      position: absolute;
+      width: 310px;
+      height: 1px;
+      top: 13px;
+      right: -370px;
+      background-color: #dbdbdb;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      width: 310px;
+      height: 1px;
+      top: 13px;
+      left: -370px;
+      background-color: #dbdbdb;
+    }
+  }
+}

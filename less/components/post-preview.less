@@ -32,3 +32,16 @@
     }
   }
 }
+
+@media(min-width: @tablet){
+  .post-preview{
+    width: 30%;
+    margin-right: 4%;
+    &:nth-child(2n){
+      margin-right: 4%;
+    }
+    &:nth-child(3n){
+      margin-right: 0;
+    }
+  }
+}

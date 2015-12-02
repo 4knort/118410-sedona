@@ -2,7 +2,7 @@
   font-size: 0;
   margin-bottom: 20px;
   position: relative;
-  &__tabler{
+  &__tablet{
     display: none;
   }
   &__btn{
@@ -87,6 +87,9 @@
     &__mobile{
       display: none;
     }
+    &__tablet{
+    display: inline;
+    }
     &__btn{
       &--minus{
         margin-right: 0;
@@ -103,6 +106,29 @@
     }
     &--days{
       text-align: center;
+    }
+  }
+}
+
+@media(min-width: @tablet){
+  .counter{
+    position: relative;
+    &__btn{
+      &--minus{
+        margin-right: 6px;
+      }
+    }
+    &:after{
+      display: block;
+    }
+    &__input{
+      padding: 17px 22px;
+      padding-right: 48px;
+      width: 50px;
+      margin-right: 6px;
+    }
+    &--men:after{
+      left: 142px;
     }
   }
 }
