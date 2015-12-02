@@ -5,4 +5,19 @@
   text-align: center;
   border-bottom: 2px solid #DBDBDB;
   padding-bottom: 40px;
+  &--tablet{
+    display: none;
+  }
+}
+
+@media(min-width: @mobile){
+  .post-navigation{
+    border-bottom: none;
+    &--mobile{
+      display: none;
+    }
+    &--tablet{
+      display: block;
+    }
+  }
 }

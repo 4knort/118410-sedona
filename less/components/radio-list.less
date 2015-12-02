@@ -6,3 +6,18 @@
       margin-bottom: 50px;
   }
 }
+
+@media(min-width: @mobile){
+  .radio-list{
+    font-size: 0;
+    &__item{
+      display: inline-block;
+      vertical-align: baseline;
+      margin-bottom: 0;
+      width: 50%;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}

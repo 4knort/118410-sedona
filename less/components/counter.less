@@ -2,6 +2,9 @@
   font-size: 0;
   margin-bottom: 20px;
   position: relative;
+  &__tabler{
+    display: none;
+  }
   &__btn{
     display: inline-block;
     vertical-align: top;
@@ -47,6 +50,7 @@
     font-family: @font-family;
     line-height: @line-height-input;
     font-size: @font-title;
+    font-weight: bold;
     background-color: @grey-f2;
     border: none;
     outline: none;
@@ -75,5 +79,30 @@
     color: #a9a9a9;
     font-weight: small-caps;
     text-transform: none;
+  }
+}
+
+@media(min-width: @mobile){
+  .counter{
+    &__mobile{
+      display: none;
+    }
+    &__btn{
+      &--minus{
+        margin-right: 0;
+      }
+    }
+    &__input{
+      padding-right: 0;
+      padding: 17px 14px;
+      width: 28px;
+      margin-right: 0;
+    }
+    &:after{
+      display: none;
+    }
+    &--days{
+      text-align: center;
+    }
   }
 }

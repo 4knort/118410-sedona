@@ -11,8 +11,24 @@
   &__content{
      line-height: @line-height;
      margin-bottom: 30px;
+     font-size: 14px;
   }
   &__tags{
     text-align: left;
+  }
+}
+
+@media(min-width: @mobile){
+  .post-preview{
+    width: 45%;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 10%;
+    &:nth-child(2n){
+      margin-right: 0;
+    }
+    &--border{
+      border-top: 2px solid #DBDBDB;
+    }
   }
 }

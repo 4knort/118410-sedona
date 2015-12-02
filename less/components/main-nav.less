@@ -5,7 +5,7 @@
     margin: 0;
   }
   &__item{
-     list-style-type: none;
+    list-style-type: none;
     display: block;
     padding: 19px;
     font-size: @font-title;
@@ -24,5 +24,28 @@
   }
   &-open{
     display: block;
+  }
+}
+@media (min-width: @mobile){
+  .main-nav{
+    display: block;
+    font-size: 0;
+    &__item{
+      display: inline-block;
+      vertical-align: baseline;
+      font-size: 14px;
+      background: none;
+      border: none;
+      box-shadow: none;
+      width: 20%;
+      padding: 0;
+      padding-top: 17px;
+      &:nth-child(2){
+        padding-right: 20%;
+      }
+    }
+    &__link{
+      color: #000;
+    }
   }
 }
