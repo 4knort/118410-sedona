@@ -3,32 +3,33 @@
   text-align: left;
   margin-bottom: 32px;
   position: relative;
+  font-size: 14px;
   &--house:before{
     content: "";
     position: absolute;
-    background: url(../img/sprite.png) no-repeat -278px -10px;
     width: 37px;
     height: 37px;
     top: -11px;
     left: 21px;
+    background-color: @blue;
   }
   &--food:before{
     content: "";
     position: absolute;
-    background: url(../img/sprite.png) no-repeat -335px -10px;
     width: 37px;
     height: 37px;
     top: -11px;
     left: 21px;
+    background-color: @blue;
   }
   &--gifts:before{
     content: "";
     position: absolute;
-    background: url(../img/sprite.png) no-repeat -392px -10px;
     width: 37px;
     height: 37px;
     top: -11px;
     left: 21px;
+    background-color: @blue;
   }
   &__title{
     font-size: @font-title;
@@ -40,5 +41,47 @@
     color: @grey;
     line-height: @line-height;
     width: 210px;
+  }
+}
+
+@media (min-width: @mobile){
+  .features-item{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    width: 33.3%;
+    padding-left: 0;
+    text-align: center;
+    padding-top: 110px;
+    &--house:before{
+      width: 75px;
+      height: 75px;
+      top: 4px;
+      left: 50%;
+      margin-left: -37px;
+    }
+    &--food:before{
+      width: 75px;
+      height: 75px;
+      top: 4px;
+      left: 50%;
+      margin-left: -37px;
+    }
+    &--gifts:before{
+      width: 75px;
+      height: 75px;
+      top: 4px;
+      left: 50%;
+      margin-left: -37px;
+    }
+    &__title{
+      font-size: @font-big;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+    &__text{
+      width: 165px;
+      margin: 0 auto;
+    }
   }
 }

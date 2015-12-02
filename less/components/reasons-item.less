@@ -2,6 +2,9 @@
   padding-top: 30px;
   text-align: center;
   padding-bottom: 27px;
+  span{
+    display: none;
+  }
   &__title{
     margin: 0;
     font-size: @font-title;
@@ -43,5 +46,30 @@
   }
 }
 
-
+@media(min-width: @mobile){
+  .reasons-item{
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    width: 33.3%;
+    border: none;
+    span{
+      display: inline;
+    }
+    &__title{
+      font-size: @font-big;
+      line-height: @line-height-title;
+      width: 125px;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+    &__number{
+      margin-bottom: 21px;
+    }
+    &__text{
+      width: 160px;
+      margin: 0 auto;
+    }
+  }
+}
 

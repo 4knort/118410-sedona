@@ -17,3 +17,35 @@
     text-align: left;
   }
 }
+
+@media(min-width: @mobile){
+  .top-blog-intro{
+    border-bottom: none;
+    &__text{
+      width: 415px;
+    }
+    &__tags--post{
+      width: 255px;
+      margin: 0 auto;
+      position: relative;
+      &:before{
+        content: "";
+        position: absolute;
+        width: 190px;
+        height: 2px;
+        top: 8px;
+        left: -210px;
+        background-color: #dbdbdb;
+      }
+      &:after{
+        content: "";
+        position: absolute;
+        width: 190px;
+        height: 2px;
+        top: 8px;
+        right: -210px;
+        background-color: #dbdbdb;
+      }
+    }
+  }
+}

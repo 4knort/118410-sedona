@@ -5,13 +5,21 @@
   font-size: @font-big;
   font-weight: bold;
   line-height: @line-height-input;
-  padding: 14px 38px;
+  padding: 14px 47px;
   text-decoration: none;
   color: #000;
   margin-right: 20px;
   margin-bottom: 20px;
   &--back{
-    padding: 14px 56px;
+    padding: 14px 75px;
     margin-bottom: 0;
+  }
+}
+
+@media(min-width: @mobile){
+  .post-btn{
+    &--back{
+      padding: 14px 20px;
+    }
   }
 }

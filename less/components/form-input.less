@@ -10,6 +10,7 @@
   background-color: @grey-f2;
   border: none;
   margin-bottom: 20px;
+  font-weight: bold;
   &--border{
     border: 2px solid #b8b8b8;
   }
@@ -18,3 +19,9 @@
   }
 }
 
+@media(min-width: @mobile){
+  .form-input{
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

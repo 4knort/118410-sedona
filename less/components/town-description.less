@@ -1,5 +1,6 @@
 .town-description{
   color: @white;
+  font-size: 14px;
   text-align: center;
   padding-top: 75px;
   padding-bottom: 40px;
@@ -41,5 +42,28 @@
   }
 }
 
-
+@media(min-width: @mobile){
+  .town-description{
+    font-size: 14px;
+    background: none;
+    background-color: @blue;
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    padding-top: 50px;
+    &__title{
+      font-size: @font-big;
+      line-height: @line-height-title;
+      width: 130px;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+    &__reason{
+      margin-bottom: 22px;
+    }
+    &__text{
+      width: 160px;
+    }
+  }
+}
 
