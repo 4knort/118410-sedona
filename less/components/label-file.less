@@ -10,6 +10,9 @@
   color: #b8b8b8;
   font-weight: bold;
   font-size: @font-title;
+  &__desktop{
+    display: none;
+  }
 }
 
 
@@ -17,5 +20,20 @@
   .label-file{
     width: 407px;
     font-size: @font-big;
+  }
+}
+
+@media(min-width: @tablet){
+.label-file{
+    width: 100%;
+    background-color: @blue;
+    color: #fff;
+    margin-bottom: 75px;
+    &__mobile{
+      display: none;
+    }
+    &__desktop{
+      display: inline;
+    }
   }
 }
