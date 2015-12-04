@@ -54,3 +54,21 @@
     }
   }
 }
+
+@media(min-width: @tablet){
+  .blog-pagination{
+    &:before{
+      left: 32.5%;
+      height: 82.5%;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 82.5%;
+      background-color: #dbdbdb;
+      top: 0;
+      right: 34%;
+    }
+  }
+}

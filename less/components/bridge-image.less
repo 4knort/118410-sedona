@@ -1,9 +1,17 @@
 .bridge-image{
-  height: 256px;
   overflow: hidden;
+  img{
+    width: 100%;
+  }
 }
 
 @media(min-width: @mobile){
-  float: left;
-  width: 67%;
+  .bridge-image{
+    float: left;
+    width: 67%;
+    height: 256px;
+    img{
+      min-height: 256px;
+    }
+  }
 }

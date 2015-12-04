@@ -3,13 +3,22 @@
   display: block;
   width: 220px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   padding: 20px 25px;
   background-color: @grey-f2;
   cursor: pointer;
   color: #b8b8b8;
   font-weight: bold;
   font-size: @font-title;
+  &:hover{
+      background-color: darken(@grey-f2, 5%);
+    }
+  &:active{
+    background-color: darken(@grey-f2, 10%);
+  }
+  &__desktop{
+    display: none;
+  }
 }
 
 
@@ -17,5 +26,11 @@
   .label-file{
     width: 407px;
     font-size: @font-big;
+  }
+}
+
+@media(min-width: @tablet){
+  .label-file{
+     display: none;
   }
 }

@@ -1,102 +1,101 @@
-
 .sprite {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
 
-.sprite-Youtube {
-    width: 20px;
-    height: 14px;
-    background-position: -10px -10px;
-}
-
-.sprite-author {
-    width: 27px;
-    height: 34px;
-    background-position: -50px -10px;
-}
-
 .sprite-check-box-empty {
     width: 56px;
     height: 56px;
-    background-position: -97px -10px;
+    background-position: -5px -5px;
+}
+
+.sprite-check-box-empty-active {
+    width: 56px;
+    height: 56px;
+    background-position: -71px -5px;
+}
+
+.sprite-check-box-empty-hover {
+    width: 56px;
+    height: 56px;
+    background-position: -137px -5px;
 }
 
 .sprite-checkbox-full {
     width: 56px;
     height: 56px;
-    background-position: -173px -10px;
+    background-position: -203px -5px;
 }
 
-.sprite-facebook {
-    width: 9px;
-    height: 19px;
-    background-position: -249px -10px;
+.sprite-checkbox-full-active {
+    width: 56px;
+    height: 56px;
+    background-position: -269px -5px;
 }
 
-.sprite-features-item1 {
-    width: 37px;
-    height: 37px;
-    background-position: -278px -10px;
-}
-
-.sprite-features-item2 {
-    width: 37px;
-    height: 35px;
-    background-position: -335px -10px;
-}
-
-.sprite-features-item3 {
-    width: 32px;
-    height: 38px;
-    background-position: -392px -10px;
+.sprite-checkbox-full-hover {
+    width: 56px;
+    height: 56px;
+    background-position: -335px -5px;
 }
 
 .sprite-nav-btn-close {
     width: 23px;
     height: 22px;
-    background-position: -444px -10px;
+    background-position: -401px -5px;
 }
 
 .sprite-nav-btn-open {
     width: 23px;
     height: 22px;
-    background-position: -487px -10px;
-}
-
-.sprite-photo-close {
-    width: 12px;
-    height: 12px;
-    background-position: -530px -10px;
+    background-position: -434px -5px;
 }
 
 .sprite-post-date {
     width: 11px;
     height: 11px;
-    background-position: -562px -10px;
+    background-position: -467px -5px;
 }
 
 .sprite-post-event {
     width: 11px;
     height: 9px;
-    background-position: -593px -10px;
+    background-position: -488px -5px;
 }
 
 .sprite-radio-active {
     width: 56px;
     height: 56px;
-    background-position: -624px -10px;
+    background-position: -509px -5px;
+}
+
+.sprite-radio-active-active {
+    width: 56px;
+    height: 56px;
+    background-position: -575px -5px;
+}
+
+.sprite-radio-active-hover {
+    width: 56px;
+    height: 56px;
+    background-position: -641px -5px;
 }
 
 .sprite-radio-empty {
     width: 56px;
     height: 56px;
-    background-position: -700px -10px;
+    background-position: -707px -5px;
 }
 
-.sprite-twitter {
-    width: 20px;
-    height: 15px;
-    background-position: -776px -10px;
+.sprite-radio-empty-active {
+    width: 56px;
+    height: 56px;
+    background-position: -773px -5px;
+}
+
+.sprite-radio-empty-hover {
+    width: 56px;
+    height: 56px;
+    background-position: -839px -5px;
 }
