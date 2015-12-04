@@ -99,8 +99,8 @@
             </div>
           </div>
           <div class="input-wrap">
-            <label class="form-label" for="leave">Дата отъезда: <span class="form-label__required">*</span></label>
-            <input class="form-input form-input--border" id="leave" type="text" placeholder="28 июля 2015">
+            <label class="form-label"  for="leave">Дата отъезда: <span class="form-label__required">*</span></label>
+            <input class="form-input form-input--disabled" disabled  id="leave" type="text" placeholder="28 июля 2015">
           </div>
         </div>
         <div class="form-amount clearfix">
@@ -179,35 +179,38 @@
         </div>
         <div class="form-photo">
         <h2 class="form-title form-title--photo">Загрузите фотографии:</h2>
-          <label class="label-file" for="file"><span class="label-file__mobile">Выбрать фотографии</span><span class="label-file__desktop">Перетащите фотографии сюда</span></label>
+          <div class="drag-file">Перетащите фотографии сюда</div>
+          <label class="label-file" for="file">Выбрать фотографии</label>
           <input class="input-file" id="file" type="file">
-          <div class="form-photo__item">
-            <img src="img/photo2.jpg" alt="">
-            <button class="form-photo__btn"></button>
-          </div>
-          <div class="form-photo__item">
-            <img src="img/photo2.jpg" alt="">
-            <button class="form-photo__btn"></button>
-          </div>
-          <div class="form-photo__item">
-            <img src="img/photo2.jpg" alt="">
-            <button class="form-photo__btn"></button>
-          </div>
-          <div class="form-photo__item">
-            <img src="img/photo2.jpg" alt="">
-            <button class="form-photo__btn"></button>
-          </div>
-          <div class="form-photo__item">
-            <img src="img/photo2.jpg" alt="">
-            <button class="form-photo__btn"></button>
-          </div>
-          <div class="form-photo__item">
-            <img src="img/photo2.jpg" alt="">
-            <button class="form-photo__btn"></button>
-          </div>
-          <div class="form-photo__item">
-            <img src="img/photo2.jpg" alt="">
-            <button class="form-photo__btn"></button>
+          <div class="photo-wrap">
+            <div class="form-photo__item">
+              <img src="img/photo2.jpg" alt="">
+              <button class="form-photo__btn"></button>
+            </div>
+            <div class="form-photo__item">
+              <img src="img/photo2.jpg" alt="">
+              <button class="form-photo__btn"></button>
+            </div>
+            <div class="form-photo__item">
+              <img src="img/photo2.jpg" alt="">
+              <button class="form-photo__btn"></button>
+            </div>
+            <div class="form-photo__item">
+              <img src="img/photo2.jpg" alt="">
+              <button class="form-photo__btn"></button>
+            </div>
+            <div class="form-photo__item">
+              <img src="img/photo2.jpg" alt="">
+              <button class="form-photo__btn"></button>
+            </div>
+            <div class="form-photo__item">
+              <img src="img/photo2.jpg" alt="">
+              <button class="form-photo__btn"></button>
+            </div>
+            <div class="form-photo__item">
+              <img src="img/photo2.jpg" alt="">
+              <button class="form-photo__btn"></button>
+            </div>
           </div>
         </div>
         <input class="submit-btn" type="submit" value="Отправить отзыв">

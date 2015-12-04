@@ -3,6 +3,7 @@
   padding-bottom: 25px;
   text-align: center;
   border-bottom: 2px solid #DBDBDB;
+  box-sizing: border-box;
   &__title{
     font-size: @font-big;
     line-height: @line-height-input;
@@ -22,13 +23,17 @@
   .post-preview{
     width: 45%;
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: top;
+    min-height: 300px;
     margin-right: 10%;
     &:nth-child(2n){
       margin-right: 0;
     }
     &--border{
       border-top: 2px solid #DBDBDB;
+      &-top{
+        border-top: none;
+      }
     }
   }
 }
@@ -42,6 +47,9 @@
     }
     &:nth-child(3n){
       margin-right: 0;
+    }
+    &--border-top{
+      border-top: 2px solid #d8d8d8;
     }
   }
 }
