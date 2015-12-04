@@ -1,6 +1,8 @@
 .town-image{
   overflow: hidden;
-  height: 256px;
+  img{
+    width: 100%;
+  }
 }
 
 @media(min-width: @mobile){
@@ -11,7 +13,7 @@
     width: 67%;
     img{
       display: block;
-      width: 100%;
+      min-height: 256px;
     }
   }
 }

@@ -21,15 +21,17 @@
   &__link{
     text-decoration: none;
     color: @white;
-  }
+    }
   &-open{
     display: block;
   }
 }
+
 @media (min-width: @mobile){
   .main-nav{
     display: block;
     font-size: 0;
+    padding-bottom: 15px;
     &__item{
       display: inline-block;
       vertical-align: baseline;
@@ -46,6 +48,21 @@
     }
     &__link{
       color: #000;
+      &:hover{
+        color: @blue;
+      }
+      &:active{
+        color: #B2B2B2;
+      }
+      &--active{
+        color: #766357;
+        &:hover{
+          color: darken(#766357, 10%);
+        }
+        &:active{
+          color: lighten(#766357, 35%);
+        }
+      }
     }
   }
 }

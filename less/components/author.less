@@ -4,14 +4,16 @@
   &__link{
     padding-right: 40px;
     position: relative;
-    &:after{
-      content: "";
-      position: absolute;
-      background: url("../img/sprite.png") no-repeat -50px -10px;
-      width: 27px;
-      height: 34px;
-      top: -7px;
-      right: 7px;
+  }
+  &__icon{
+    position: absolute;
+    top: -7px;
+    right: 7px;
+    &:hover{
+      fill: @blue;
+    }
+    &:active{
+      fill: #b2b2b2;
     }
   }
 }
