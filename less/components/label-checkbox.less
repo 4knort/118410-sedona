@@ -8,7 +8,7 @@
   &:before{
     content: "";
     position: absolute;
-    background: url("../img/sprite.png") no-repeat -97px -10px;
+    background: url("../img/sprite.png") no-repeat -5px -5px;
     width: 56px;
     height: 56px;
     top: -15px;
@@ -16,8 +16,17 @@
   }
 }
 .form-checkbox:checked + .label-checkbox:before{
-  background-position: -173px -10px;
+  background-position: -203px -5px;
 }
-
-
-
+.form-checkbox:checked + .label-checkbox:hover:before{
+  background-position: -335px -5px;
+}
+.form-checkbox:checked + .label-checkbox:active:before{
+  background-position: -269px -5px;
+}
+.form-checkbox + .label-checkbox:hover:before{
+  background-position: -137px -5px;
+}
+.form-checkbox + .label-checkbox:active:before{
+  background-position: -71px -5px;
+}
