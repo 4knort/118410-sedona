@@ -60,11 +60,11 @@
           <h2 class="form-title">Представьтесь, пожалуйста:</h2>
           <div class="input-wrap">
             <label class="form-label" for="last-name">Фамилия: <span class="form-label__required">*</span></label>
-            <input class="form-input" id="last-name" type="text" placeholder="Иванов">
+            <input class="form-input" id="last-name" required type="text" placeholder="Иванов">
           </div>
           <div class="input-wrap">
             <label class="form-label" for="name">Имя: <span class="form-label__required">*</span></label>
-            <input class="form-input" id="name" type="text" placeholder="Петр">
+            <input class="form-input" id="name" required type="text" placeholder="Петр">
           </div>
           <div class="input-wrap">
             <label class="form-label" for="patronymic">Отчество:</label>
@@ -88,13 +88,13 @@
           <h2 class="form-title form-title--travel">Даты вашей поездки:</h2>
           <div class="input-wrap">
             <label class="form-label" for="date">Дата приезда: <span class="form-label__required">*</span></label>
-            <input class="form-input" type="text" id="date" placeholder="4 июля 2015">
+            <input class="form-input" type="text" id="date" required placeholder="4 июля 2015">
           </div>
           <div class="input-wrap">
             <label class="form-label form-label--counter" for="days"><span class="counter__mobile">Длительность</span><span class="counter__tablet">Дней</span> пребывания: <span class="form-label__required">*</span></label>
             <div class="counter counter--days">
               <a class="counter__btn counter__btn--minus" href="#"></a>
-              <input class="counter__input" type="text" id="days" value="14">
+              <input class="counter__input" required type="text" id="days" value="14">
               <a class="counter__btn counter__btn--plus" href="#"></a>
             </div>
           </div>
@@ -109,7 +109,7 @@
             <label class="form-label" for="men"><span class="counter__mobile">Количество</span><span class="counter__tablet">Кол-во</span> путешественников: <span class="form-label__required">*</span></label>
             <div class="counter counter--men">
               <a class="counter__btn counter__btn--minus" href="#"></a>
-              <input class="counter__input" type="text" id="men" value="2">
+              <input class="counter__input" required type="text" id="men" value="2">
               <a class="counter__btn counter__btn--plus" href="#"></a>
             </div>
           </div>
@@ -121,11 +121,11 @@
             <div class="form-amount__item-description">
               <div class="input-wrap">
                 <label class="form-label" for="last-name1">Фамилия: <span class="form-label__required">*</span></label>
-                <input class="form-input form-input--amount" id="last-name1" type="text" placeholder="Иванов">
+                <input class="form-input form-input--amount" id="last-name1" required type="text" placeholder="Иванов">
               </div>
               <div class="input-wrap">
                 <label class="form-label" for="name1">Имя: <span class="form-label__required">*</span></label>
-                <input class="form-input form-input--amount" id="name1" type="text" placeholder="Петр">
+                <input class="form-input form-input--amount" id="name1" required type="text" placeholder="Петр">
               </div>
               <div class="input-wrap">
                 <label class="form-label" for="patronymic1">Отчество:</label>
@@ -141,11 +141,11 @@
             <div class="form-amount__item-description">
               <div class="input-wrap">
                 <label class="form-label" for="last-name2">Фамилия: <span class="form-label__required">*</span></label>
-                <input class="form-input form-input--amount" id="last-name2" type="text" placeholder="Иванов">
+                <input class="form-input form-input--amount" id="last-name2" required type="text" placeholder="Иванов">
               </div>
               <div class="input-wrap">
                 <label class="form-label" for="name2">Имя: <span class="form-label__required">*</span></label>
-                <input class="form-input form-input--amount" id="name2" type="text" placeholder="Петр">
+                <input class="form-input form-input--amount" id="name2" required type="text" placeholder="Петр">
               </div>
               <div class="input-wrap">
                 <label class="form-label" for="patronymic2">Отчество:</label>
@@ -285,6 +285,7 @@
       <a href="#" class="module-failure-btn">ок</a>
     </div>
   </div>
+  <script src="js/jquery.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
