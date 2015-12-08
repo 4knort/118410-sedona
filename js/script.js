@@ -1,4 +1,5 @@
 var navBtn = document.querySelector (".js-main-navigation-button");
+var mainNav = document.querySelector(".js-main-nav");
 var plus = document.querySelectorAll (".counter__btn--plus");
 var minus = document.querySelectorAll (".counter__btn--minus");
 var counterInput = document.querySelector (".counter__input");
@@ -23,11 +24,12 @@ for(i=0;i<minus.length;++i)
 
 navBtn.addEventListener("click", function(event){
   event.preventDefault(),
+  mainNav.classList.toggle("main-nav-open"),
   navBtn.classList.toggle("main-navigation-close")
 });
 
-$(document).ready(function(){
-    $(".js-main-navigation-button").click(function(){
-        $(".js-main-nav").slideToggle("slow");
-    })
-})
+// $(document).ready(function(){
+//     $(".js-main-navigation-button").click(function(){
+//         $(".js-main-nav").slideToggle("slow");
+//     })
+// })
