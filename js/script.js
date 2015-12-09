@@ -62,7 +62,7 @@ navBtn.addEventListener("click", function(event){
       if(xhr.readyState == 4){
         console.log(xhr.responseText);
       }
-   });
+    });
   xhr.send(data);
   });
 
