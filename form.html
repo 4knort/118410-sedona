@@ -94,7 +94,7 @@
             <label class="form-label form-label--counter" for="days"><span class="counter__mobile">Длительность</span><span class="counter__tablet">Дней</span> пребывания: <span class="form-label__required">*</span></label>
             <div class="counter counter--days">
               <a class="counter__btn counter__btn--minus" href="#"></a>
-              <input class="counter__input" required type="text" id="days" value="14">
+              <input class="counter__input" name="days" required type="text" id="days" value="14">
               <a class="counter__btn counter__btn--plus" href="#"></a>
             </div>
           </div>
@@ -109,7 +109,7 @@
             <label class="form-label" for="men"><span class="counter__mobile">Количество</span><span class="counter__tablet">Кол-во</span> путешественников: <span class="form-label__required">*</span></label>
             <div class="counter counter--men">
               <a class="counter__btn counter__btn--minus" href="#"></a>
-              <input class="counter__input" required type="text" id="men" value="2">
+              <input class="counter__input" required type="text" id="men" name="travelers" value="2">
               <a class="counter__btn counter__btn--plus" href="#"></a>
             </div>
           </div>
@@ -258,5 +258,11 @@
   </div>
   <!-- // <script src="js/jquery.js"></script> -->
   <script src="js/script.js"></script>
+  <script id="image-template">
+    // <div class="form-photo__item">
+      <img src="{{image}}" alt="{{name}}">
+      <button class="form-photo__btn"></button>
+    // </div>
+  </script>
 </body>
 </html>

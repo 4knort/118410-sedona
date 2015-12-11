@@ -4,6 +4,17 @@ var plus = document.querySelectorAll (".counter__btn--plus");
 var minus = document.querySelectorAll (".counter__btn--minus");
 var counterInput = document.querySelector (".counter__input");
 
+navBtn.addEventListener("click", function(event){
+  event.preventDefault(),
+  mainNav.classList.toggle("main-nav-open"),
+  navBtn.classList.toggle("main-navigation-close")
+});
+
+// $(document).ready(function(){
+//     $(".js-main-navigation-button").click(function(){
+//         $(".js-main-nav").slideToggle("slow");
+//     })
+// })
 
 // for(i=0;i<plus.length;i++)
 //   plus[i].addEventListener("click", function(event){
@@ -24,31 +35,32 @@ var counterInput = document.querySelector (".counter__input");
 for(i=0;i<plus.length;i++){
   plus[i].addEventListener("click", function(event){
     event.preventDefault();
-    var counter = plus[i].parentNode;
-    var parentCounter = counter.querySelector("counter__input");
+    plus[i].parentNode;
+    // var parentCounter = counter.querySelector("counter__input");
     if(parseInt(parentCounter.value) < 30){
       parentCounter.value = parseInt(parentCounter.value) +1;
     }
   });
 }
 
-navBtn.addEventListener("click", function(event){
-  event.preventDefault(),
-  mainNav.classList.toggle("main-nav-open"),
-  navBtn.classList.toggle("main-navigation-close")
-});
 
-// $(document).ready(function(){
-//     $(".js-main-navigation-button").click(function(){
-//         $(".js-main-nav").slideToggle("slow");
-//     })
-// })
+
+
 
 (function(){
   if(!("FormData" in window)){
     return;
   }
+  var queue = [];
   var form = document.querySelector(".form");
+
+  function removePreview(div) {
+    queue = queue.filter(function(element) {
+    return element.div != div; // ????
+    });
+
+    div.parentNode.removeChild(div);
+  }
 
   form.addEventListener("submit", function(event){
     event.preventDefault();
@@ -57,6 +69,10 @@ navBtn.addEventListener("click", function(event){
     var xhr = new XMLHttpRequest();
     var time = (new Date()).getTime();
 
+    queue.forEach(function(element) {
+      data.append("images", element.file);
+    });  // ???
+
     xhr.open("post", "https://echo.htmlacademy.ru/adaptive?" + time);
     xhr.addEventListener("readystatechange", function(){
       if(xhr.readyState == 4){
@@ -64,40 +80,43 @@ navBtn.addEventListener("click", function(event){
       }
     });
   xhr.send(data);
+  form.reset();
   });
 
 
   if ("FileReader" in window){
-
     form.querySelector(".js-input-file").addEventListener("change", function() {
 
       var files = this.files;
       for (var i = 0; i < files.length; i++) {
         preview(files[i]);
-      }
+      }  // ???
+      this.value = "";
     });
 
     function preview(file){
       var area = document.querySelector(".js-photo-wrap");
-
+      var imgTemplate = document.querySelector("#image-template").innerHTML;
       if (file.type.match(/image.*/)){
-        var reader = new FileReader();
+        var reader = new FileReader(); //???
 
         reader.addEventListener("load", function(event){
 
-          var photoItem = document.createElement("div");
-          var img = document.createElement("img");
-          var button = document.createElement("button");    // создаем див в котором будет фото и кнопка
+          var html = imgTemplate.replace("{{image}}", event.target.result);
+          html = html.replace("{{name}}", file.name);
 
-          photoItem.classList.add("form-photo__item");
-          button.classList.add("form-photo__btn") // даем нужные классы созданынм элементам
+          var div = document.createElement("div");
+          div.classList.add("form-photo__item");
+          div.innerHTML = html;
+          area.appendChild(div);
 
-          img.src = event.target.result;
-          img.alt = file.name;
+          queue.push({file: file, div: div});
 
-          area.appendChild(photoItem);
-          photoItem.appendChild(img);
-          photoItem.appendChild(button); // добавляем элементы в хтмл
+          div.querySelector(".form-photo__btn").addEventListener("click", function(event){
+            event.preventDefault();
+            removePreview(div);
+          });
+
         });
 
         reader.readAsDataURL(file);
