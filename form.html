@@ -121,15 +121,15 @@
             <div class="form-amount__item-description">
               <div class="input-wrap">
                 <label class="form-label" for="last-name1">Фамилия: <span class="form-label__required">*</span></label>
-                <input class="form-input form-input--amount" id="last-name1" required name="lastname" type="text" placeholder="Иванов">
+                <input class="form-input form-input--amount" id="last-name1" required name="travelers-lastname" type="text" placeholder="Иванов">
               </div>
               <div class="input-wrap">
                 <label class="form-label" for="name1">Имя: <span class="form-label__required">*</span></label>
-                <input class="form-input form-input--amount" id="name1" required name="name" type="text" placeholder="Петр">
+                <input class="form-input form-input--amount" id="name1" required name="travelers-name" type="text" placeholder="Петр">
               </div>
               <div class="input-wrap">
                 <label class="form-label" for="patronymic1">Отчество:</label>
-                <input class="form-input form-input--amount" id="patronymic1" name="patronymic" type="text" placeholder="Александрович">
+                <input class="form-input form-input--amount" id="patronymic1" name="travelers-patronymic" type="text" placeholder="Александрович">
               </div>
             </div>
           </div>
@@ -141,15 +141,15 @@
             <div class="form-amount__item-description">
               <div class="input-wrap">
                 <label class="form-label" for="last-name2">Фамилия: <span class="form-label__required">*</span></label>
-                <input class="form-input form-input--amount" id="last-name2" name="lastname" required type="text" placeholder="Иванов">
+                <input class="form-input form-input--amount" id="last-name2" name="travelers-lastname" required type="text" placeholder="Иванов">
               </div>
               <div class="input-wrap">
                 <label class="form-label" for="name2">Имя: <span class="form-label__required">*</span></label>
-                <input class="form-input form-input--amount" id="name2" name="name" required type="text" placeholder="Петр">
+                <input class="form-input form-input--amount" id="name2" name="travelers-name" required type="text" placeholder="Петр">
               </div>
               <div class="input-wrap">
                 <label class="form-label" for="patronymic2">Отчество:</label>
-                <input class="form-input form-input--amount" id="patronymic2" name="patronymic" type="text" placeholder="Александрович">
+                <input class="form-input form-input--amount" id="patronymic2" name="travelers-patronymic" type="text" placeholder="Александрович">
               </div>
             </div>
           </div>
@@ -259,10 +259,30 @@
   <!-- // <script src="js/jquery.js"></script> -->
   <script src="js/script.js"></script>
   <script id="image-template">
-    // <div class="form-photo__item">
       <img src="{{image}}" alt="{{name}}">
       <button class="form-photo__btn"></button>
-    // </div>
+  </script>
+  <script id="travel-template">
+    <div class="form-amount__item clearfix">
+      <div class="form-amount__number">
+        <div class="number-icon">№</div>
+        <div class="form-number">2</div>
+      </div>
+      <div class="form-amount__item-description">
+        <div class="input-wrap">
+          <label class="form-label" for="last-name2">Фамилия: <span class="form-label__required">*</span></label>
+          <input class="form-input form-input--amount" id="last-name2" name="travelers-lastname" required type="text" placeholder="Иванов">
+        </div>
+        <div class="input-wrap">
+          <label class="form-label" for="name2">Имя: <span class="form-label__required">*</span></label>
+          <input class="form-input form-input--amount" id="name2" name="travelers-name" required type="text" placeholder="Петр">
+        </div>
+        <div class="input-wrap">
+          <label class="form-label" for="patronymic2">Отчество:</label>
+          <input class="form-input form-input--amount" id="patronymic2" name="travelers-patronymic" type="text" placeholder="Александрович">
+        </div>
+      </div>
+    </div>
   </script>
 </body>
 </html>

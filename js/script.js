@@ -16,32 +16,33 @@ navBtn.addEventListener("click", function(event){
 //     })
 // })
 
-// for(i=0;i<plus.length;i++)
-//   plus[i].addEventListener("click", function(event){
-//     event.preventDefault();
-//     if(parseInt(counterInput.value) < 30){
-//       counterInput.value = parseInt(counterInput.value) +1;
-//     }
-//   });
 
-// for(i=0;i<minus.length;i++)
-//   minus[i].addEventListener("click", function(event){
-//     event.preventDefault();
-//     if(parseInt(counterInput.value) >= 1){
-//       counterInput.value = parseInt(counterInput.value) -1;
-//     }
-//   });
 
 for(i=0;i<plus.length;i++){
   plus[i].addEventListener("click", function(event){
     event.preventDefault();
-    plus[i].parentNode;
-    // var parentCounter = counter.querySelector("counter__input");
-    if(parseInt(parentCounter.value) < 30){
-      parentCounter.value = parseInt(parentCounter.value) +1;
+    var el = event.target;
+    var parent = el.parentNode;
+    counterInput = parent.querySelector(".counter__input")
+    if(parseInt(counterInput.value) < 30){
+      counterInput.value = parseInt(counterInput.value) +1;
     }
   });
 }
+
+for(i=0;i<minus.length;i++){
+  minus[i].addEventListener("click", function(event){
+    event.preventDefault();
+    var el = event.target;
+    var parent = el.parentNode;
+    counterInput = parent.querySelector(".counter__input")
+    if(parseInt(counterInput.value) -1 >= 0){
+      counterInput.value = parseInt(counterInput.value) -1;
+    }
+  });
+}
+
+
 
 
 
@@ -71,7 +72,7 @@ for(i=0;i<plus.length;i++){
 
     queue.forEach(function(element) {
       data.append("images", element.file);
-    });  // ???
+    });  // ???  почему element.file это сам файл имг который нам нужен.
 
     xhr.open("post", "https://echo.htmlacademy.ru/adaptive?" + time);
     xhr.addEventListener("readystatechange", function(){
@@ -89,8 +90,8 @@ for(i=0;i<plus.length;i++){
 
       var files = this.files;
       for (var i = 0; i < files.length; i++) {
-        preview(files[i]);
-      }  // ???
+        preview(files[i]);  // каждый файл(каждый элемент массива) запускает функцию превью
+      }
       this.value = "";
     });
 
@@ -98,11 +99,11 @@ for(i=0;i<plus.length;i++){
       var area = document.querySelector(".js-photo-wrap");
       var imgTemplate = document.querySelector("#image-template").innerHTML;
       if (file.type.match(/image.*/)){
-        var reader = new FileReader(); //???
+        var reader = new FileReader(); //  позволяет читать файлы, переделывает в base64
 
-        reader.addEventListener("load", function(event){
+        reader.addEventListener("load", function(event){  // событие которое срабатывает когда файл загружен
 
-          var html = imgTemplate.replace("{{image}}", event.target.result);
+          var html = imgTemplate.replace("{{image}}", event.target.result); // target это элемент на котором произошло событие и у него есть свойтво резалт в котором будет наша картинка
           html = html.replace("{{name}}", file.name);
 
           var div = document.createElement("div");
@@ -110,7 +111,7 @@ for(i=0;i<plus.length;i++){
           div.innerHTML = html;
           area.appendChild(div);
 
-          queue.push({file: file, div: div});
+          queue.push({file: file, div: div}); //???
 
           div.querySelector(".form-photo__btn").addEventListener("click", function(event){
             event.preventDefault();
@@ -119,7 +120,7 @@ for(i=0;i<plus.length;i++){
 
         });
 
-        reader.readAsDataURL(file);
+        reader.readAsDataURL(file); // спец метод который может прочитать данные с файла который браузер подготовил
       }
     }
   }
