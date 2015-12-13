@@ -55,20 +55,20 @@
           а также о посещенных вами достопримечательностях
         </p>
       </div>
-      <form class="form" action="echo/">
+      <form class="form" action="https://echo.htmlacademy.ru/adaptive" method="post">
         <div class="form-introduce">
           <h2 class="form-title">Представьтесь, пожалуйста:</h2>
           <div class="input-wrap">
             <label class="form-label" for="last-name">Фамилия: <span class="form-label__required">*</span></label>
-            <input class="form-input" id="last-name" type="text" placeholder="Иванов">
+            <input class="form-input" id="last-name" required type="text" name="lastname" placeholder="Иванов">
           </div>
           <div class="input-wrap">
             <label class="form-label" for="name">Имя: <span class="form-label__required">*</span></label>
-            <input class="form-input" id="name" type="text" placeholder="Петр">
+            <input class="form-input" id="name" required type="text" name="name" placeholder="Петр">
           </div>
           <div class="input-wrap">
             <label class="form-label" for="patronymic">Отчество:</label>
-            <input class="form-input" id="patronymic" type="text" placeholder="Александрович">
+            <input class="form-input" id="patronymic" type="text" name="patronymic" placeholder="Александрович">
           </div>
         </div>
         <div class="form-impression">
@@ -88,13 +88,13 @@
           <h2 class="form-title form-title--travel">Даты вашей поездки:</h2>
           <div class="input-wrap">
             <label class="form-label" for="date">Дата приезда: <span class="form-label__required">*</span></label>
-            <input class="form-input" type="text" id="date" placeholder="4 июля 2015">
+            <input class="form-input" type="text" id="date" name="date"  required placeholder="4 июля 2015">
           </div>
           <div class="input-wrap">
             <label class="form-label form-label--counter" for="days"><span class="counter__mobile">Длительность</span><span class="counter__tablet">Дней</span> пребывания: <span class="form-label__required">*</span></label>
             <div class="counter counter--days">
               <a class="counter__btn counter__btn--minus" href="#"></a>
-              <input class="counter__input" type="text" id="days" value="14">
+              <input class="counter__input" name="days" required type="text" id="days" value="14">
               <a class="counter__btn counter__btn--plus" href="#"></a>
             </div>
           </div>
@@ -109,7 +109,7 @@
             <label class="form-label" for="men"><span class="counter__mobile">Количество</span><span class="counter__tablet">Кол-во</span> путешественников: <span class="form-label__required">*</span></label>
             <div class="counter counter--men">
               <a class="counter__btn counter__btn--minus" href="#"></a>
-              <input class="counter__input" type="text" id="men" value="2">
+              <input class="counter__input" required type="text" id="men" name="travelers" value="2">
               <a class="counter__btn counter__btn--plus" href="#"></a>
             </div>
           </div>
@@ -121,15 +121,15 @@
             <div class="form-amount__item-description">
               <div class="input-wrap">
                 <label class="form-label" for="last-name1">Фамилия: <span class="form-label__required">*</span></label>
-                <input class="form-input form-input--amount" id="last-name1" type="text" placeholder="Иванов">
+                <input class="form-input form-input--amount" id="last-name1" required name="travelers-lastname" type="text" placeholder="Иванов">
               </div>
               <div class="input-wrap">
                 <label class="form-label" for="name1">Имя: <span class="form-label__required">*</span></label>
-                <input class="form-input form-input--amount" id="name1" type="text" placeholder="Петр">
+                <input class="form-input form-input--amount" id="name1" required name="travelers-name" type="text" placeholder="Петр">
               </div>
               <div class="input-wrap">
                 <label class="form-label" for="patronymic1">Отчество:</label>
-                <input class="form-input form-input--amount" id="patronymic1" type="text" placeholder="Александрович">
+                <input class="form-input form-input--amount" id="patronymic1" name="travelers-patronymic" type="text" placeholder="Александрович">
               </div>
             </div>
           </div>
@@ -141,15 +141,15 @@
             <div class="form-amount__item-description">
               <div class="input-wrap">
                 <label class="form-label" for="last-name2">Фамилия: <span class="form-label__required">*</span></label>
-                <input class="form-input form-input--amount" id="last-name2" type="text" placeholder="Иванов">
+                <input class="form-input form-input--amount" id="last-name2" name="travelers-lastname" required type="text" placeholder="Иванов">
               </div>
               <div class="input-wrap">
                 <label class="form-label" for="name2">Имя: <span class="form-label__required">*</span></label>
-                <input class="form-input form-input--amount" id="name2" type="text" placeholder="Петр">
+                <input class="form-input form-input--amount" id="name2" name="travelers-name" required type="text" placeholder="Петр">
               </div>
               <div class="input-wrap">
                 <label class="form-label" for="patronymic2">Отчество:</label>
-                <input class="form-input form-input--amount" id="patronymic2" type="text" placeholder="Александрович">
+                <input class="form-input form-input--amount" id="patronymic2" name="travelers-patronymic" type="text" placeholder="Александрович">
               </div>
             </div>
           </div>
@@ -181,37 +181,8 @@
         <h2 class="form-title form-title--photo">Загрузите фотографии:</h2>
           <div class="drag-file">Перетащите фотографии сюда</div>
           <label class="label-file" for="file">Выбрать фотографии</label>
-          <input class="input-file" id="file" type="file">
-          <div class="photo-wrap">
-            <div class="form-photo__item">
-              <img src="img/photo2.jpg" alt="">
-              <button class="form-photo__btn"></button>
-            </div>
-            <div class="form-photo__item">
-              <img src="img/photo2.jpg" alt="">
-              <button class="form-photo__btn"></button>
-            </div>
-            <div class="form-photo__item">
-              <img src="img/photo2.jpg" alt="">
-              <button class="form-photo__btn"></button>
-            </div>
-            <div class="form-photo__item">
-              <img src="img/photo2.jpg" alt="">
-              <button class="form-photo__btn"></button>
-            </div>
-            <div class="form-photo__item">
-              <img src="img/photo2.jpg" alt="">
-              <button class="form-photo__btn"></button>
-            </div>
-            <div class="form-photo__item">
-              <img src="img/photo2.jpg" alt="">
-              <button class="form-photo__btn"></button>
-            </div>
-            <div class="form-photo__item">
-              <img src="img/photo2.jpg" alt="">
-              <button class="form-photo__btn"></button>
-            </div>
-          </div>
+          <input class="input-file js-input-file" id="file" type="file" multiple>
+          <div class="photo-wrap js-photo-wrap"></div>
         </div>
         <input class="submit-btn" type="submit" value="Отправить отзыв">
       </form>
@@ -285,6 +256,33 @@
       <a href="#" class="module-failure-btn">ок</a>
     </div>
   </div>
+  <!-- // <script src="js/jquery.js"></script> -->
   <script src="js/script.js"></script>
+  <script id="image-template">
+      <img src="{{image}}" alt="{{name}}">
+      <button class="form-photo__btn"></button>
+  </script>
+  <script id="travel-template">
+    <div class="form-amount__item clearfix">
+      <div class="form-amount__number">
+        <div class="number-icon">№</div>
+        <div class="form-number">2</div>
+      </div>
+      <div class="form-amount__item-description">
+        <div class="input-wrap">
+          <label class="form-label" for="last-name2">Фамилия: <span class="form-label__required">*</span></label>
+          <input class="form-input form-input--amount" id="last-name2" name="travelers-lastname" required type="text" placeholder="Иванов">
+        </div>
+        <div class="input-wrap">
+          <label class="form-label" for="name2">Имя: <span class="form-label__required">*</span></label>
+          <input class="form-input form-input--amount" id="name2" name="travelers-name" required type="text" placeholder="Петр">
+        </div>
+        <div class="input-wrap">
+          <label class="form-label" for="patronymic2">Отчество:</label>
+          <input class="form-input form-input--amount" id="patronymic2" name="travelers-patronymic" type="text" placeholder="Александрович">
+        </div>
+      </div>
+    </div>
+  </script>
 </body>
 </html>
