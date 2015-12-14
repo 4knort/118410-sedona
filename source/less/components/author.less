@@ -1,0 +1,29 @@
+.author{
+  text-align:center;
+  font-size:14px;
+  &__link{
+    padding-right:40px;
+    position:relative;
+  }
+  &__icon{
+    position:absolute;
+    top:-7px;
+    right:7px;
+    &:hover{
+      fill:@blue;
+    }
+    &:active{
+      fill:#b2b2b2;
+    }
+  }
+}
+
+@media(min-width: @mobile){
+  .author{
+    display:inline-block;
+    vertical-align:top;
+    width:33%;
+    text-align:right;
+    padding-top:15px;
+  }
+}

@@ -1,0 +1,40 @@
+.form-input{
+  display:inline-block;
+  vertical-align:baseline;
+  font-family:@font-family;
+  line-height:@line-height-input;
+  width:240px;
+  padding:16px 20px;
+  font-size:@font-title;
+  outline:none;
+  background-color:@grey-f2;
+  border:none;
+  margin-bottom:20px;
+  font-weight:bold;
+  border:2px solid @grey-f2;
+  &:hover{
+    background-color:darken(@grey-f2, 5%);
+    border-color:darken(@grey-f2, 5%);
+  }
+  &:focus{
+    background-color:#fff;
+    border:2px solid #e5e5e5;
+  }
+  &--disabled{
+    border:2px solid #b8b8b8;
+    &:hover{
+      background-color:@grey-f2;
+      border:2px solid #b8b8b8;
+    }
+  }
+  &--amount{
+    width:171px;
+  }
+}
+
+@media(min-width: @mobile){
+  .form-input{
+    width:100%;
+    box-sizing:border-box;
+  }
+}

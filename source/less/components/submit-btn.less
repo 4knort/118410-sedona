@@ -1,0 +1,25 @@
+.submit-btn{
+  border:none;
+  outline:none;
+  text-transform:uppercase;
+  font-weight:bold;
+  margin:0 auto;
+  display:block;
+  background-color:@blue;
+  width:280px;
+  padding:16px 0;
+  font-size:@font-big;
+  color:@white;
+  &:hover{
+    background-color:darken(@blue, 5%);
+  }
+  &:active{
+    background-color:darken(@blue, 15%);
+  }
+}
+
+@media(min-width: @mobile){
+  .submit-btn{
+    width:457px;
+  }
+}

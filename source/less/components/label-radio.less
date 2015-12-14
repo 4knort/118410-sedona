@@ -1,0 +1,36 @@
+.label-radio{
+  font-size:@font-title;
+  font-weight:bold;
+  text-transform:none;
+  padding-left:80px;
+  position:relative;
+  cursor:pointer;
+  display:inline-block;
+  vertical-align:baseline;
+  &:before{
+    content:"";
+    position:absolute;
+    background:url("../img/sprite.png") no-repeat -707px -5px;
+    width:56px;
+    height:56px;
+    top:-15px;
+    left:0;
+  }
+}
+.form-radio:checked + .label-radio:before{
+  background-position:-509px -5px;
+}
+.form-radio + .label-radio:hover:before{
+  background-position:-839px -5px;
+}
+.form-radio + .label-radio:active:before{
+  background-position:-773px -5px;
+}
+.form-radio:checked + .label-radio:hover:before{
+  background-position:-641px -5px;
+}
+.form-radio:checked + .label-radio:active:before{
+  background-position:-575px -5px;
+}
+
+
