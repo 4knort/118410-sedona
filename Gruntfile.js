@@ -77,6 +77,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: "source",
           src: [
+            "js/jquery.js",
             "img/**",
             "index.html",
             "form.html",
@@ -94,7 +95,7 @@ module.exports = function(grunt) {
 
     concat: {
       dist: {
-        src: ["source/js/jquery.js", "source/js/script.js"],
+        src: ["source/js/script.js"],
         dest: "build/js/script.js"
       }
     },
