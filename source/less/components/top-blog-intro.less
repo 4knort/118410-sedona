@@ -1,7 +1,7 @@
 .top-blog-intro{
   text-align:center;
   border-bottom:2px solid #dbdbdb;
-  padding-bottom:20px;
+  padding-bottom:7px;
   &__title{
     font-size:30px;
     line-height:30px;
@@ -9,7 +9,7 @@
   }
   &__text{
     line-height:24px;
-    width:295px;
+    width:240px;
     margin:0 auto;
     margin-bottom:20px;
   }
@@ -24,6 +24,12 @@
     padding:0 40px;
     &__text{
       width:415px;
+      &--post{
+        margin-bottom:42px;
+      }
+    }
+    &--post{
+      margin-bottom:40px;
     }
     &__tags--post{
       width:255px;
@@ -49,4 +55,12 @@
       }
     }
   }
-}
+}
+
+@media(min-width: @tablet){
+  .top-blog-intro{
+    &--post{
+      margin-bottom:48px;
+    }
+  }
+}
