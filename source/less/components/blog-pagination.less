@@ -1,0 +1,78 @@
+.blog-pagination{
+  padding-left:20px;
+  padding-right:20px;
+  &__buttons{
+    font-size:0;
+    padding-top:29px;
+  }
+  &__button{
+    display:inline-block;
+    vertical-align:top;
+    padding:20px 25px;
+    background-color:@blue;
+    color:@white;
+    font-size:@font-big;
+    line-height:@line-height;
+    font-weight:bold;
+    text-decoration:none;
+    margin-right:2.8%;
+    margin-bottom:15px;
+    &--active{
+      background-color:#e5e5e5;
+      color:#000;
+    }
+    &__title{
+      display:none;
+    }
+  }
+}
+
+
+@media(min-width: @mobile){
+  .blog-pagination{
+    font-size:0;
+    position:relative;
+    padding:0 40px;
+    &__title{
+      display:inline-block;
+      vertical-align:top;
+      font-size:@font-big;
+      font-weight:bold;
+      padding:20px 0;
+      margin-right:10%;
+    }
+    &:before{
+      content:"";
+      position:absolute;
+      width:2px;
+      height:87%;
+      background-color:#dbdbdb;
+      top:0;
+      left:50%;
+    }
+    &__button{
+    }
+  }
+}
+
+@media(min-width: @tablet){
+  .blog-pagination{
+    &:before{
+      left:32.5%;
+      height:82.5%;
+    }
+    &:after{
+      content:"";
+      position:absolute;
+      width:2px;
+      height:82.5%;
+      background-color:#dbdbdb;
+      top:0;
+      right:34%;
+    }
+    &__buttons{
+      padding-top:34px;
+      padding-left:100px;
+    }
+  }
+}

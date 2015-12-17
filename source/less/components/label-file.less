@@ -1,0 +1,36 @@
+.label-file{
+  text-align:center;
+  display:block;
+  width:240px;
+  margin:0 auto;
+  margin-bottom:50px;
+  padding:20px 15px;
+  background-color:@grey-f2;
+  cursor:pointer;
+  color:#b8b8b8;
+  font-weight:bold;
+  font-size:@font-big;
+  &:hover{
+    background-color:darken(@grey-f2, 5%);
+  }
+  &:active{
+    background-color:darken(@grey-f2, 10%);
+  }
+  &__desktop{
+    display:none;
+  }
+}
+
+
+@media(min-width: @mobile){
+  .label-file{
+    width:425px;
+    margin-bottom:85px;
+  }
+}
+
+@media(min-width: @tablet){
+  .label-file{
+    display:none;
+  }
+}

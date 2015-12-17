@@ -1,0 +1,43 @@
+.post-btn{
+  display:inline-block;
+  vertical-align:top;
+  border:2px solid @blue;
+  font-size:@font-big;
+  font-weight:bold;
+  line-height:@line-height-input;
+  padding:14px 47px;
+  text-decoration:none;
+  color:#000;
+  margin-right:20px;
+  margin-bottom:20px;
+  &--back{
+    padding:14px 75px;
+    margin-bottom:0;
+    &-mobile{
+      margin-right:0;
+      padding:14px 50px;
+    }
+  }
+  &:hover{
+    background-color:@blue;
+    color:#fff;
+  }
+  &:active{
+    background-color:darken(@blue, 15%);
+    color:rgba(250, 250, 250, 0.3);
+  }
+  &--mobile{
+    padding:14px 38px;
+    &-next{
+      margin-right:15px;
+    }
+  }
+}
+
+@media(min-width: @mobile){
+  .post-btn{
+    &--back{
+      padding:14px 20px;
+    }
+  }
+}

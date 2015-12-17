@@ -1,0 +1,22 @@
+.hotels-btn{
+  display:inline-block;
+  background-color:@blue;
+  text-decoration:none;
+  color:@white;
+  padding:20px 47px;
+  font-size:@font-big;
+  font-weight:bold;
+  &:hover{
+    background-color:darken(@blue, 10%);
+  }
+  &:active{
+    background-color:darken(@blue, 15%);
+    color:rgba(250, 250, 250, 0.2);
+  }
+}
+
+@media(min-width: @mobile){
+  .hotels-btn{
+    padding:20px 135px;
+  }
+}

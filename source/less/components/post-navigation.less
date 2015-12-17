@@ -1,0 +1,25 @@
+.post-navigation{
+  padding-top:39px;
+  font-size:0;
+  width:100%;
+  text-align:center;
+  border-bottom:2px solid #dbdbdb;
+  padding-bottom:40px;
+  &--tablet{
+    display:none;
+  }
+}
+
+@media(min-width: @mobile){
+  .post-navigation{
+    padding-top:19px;
+    padding-bottom:29px;
+    border-bottom:none;
+    &--mobile{
+      display:none;
+    }
+    &--tablet{
+      display:block;
+    }
+  }
+}
