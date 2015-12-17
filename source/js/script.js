@@ -10,11 +10,7 @@ navBtn.addEventListener("click", function(event){
   navBtn.classList.toggle("main-navigation-close")
 });
 
-// $(document).ready(function(){
-//     $(".js-main-navigation-button").click(function(){
-//         $(".js-main-nav").slideToggle("slow");
-//     })
-// })
+
 
 
 
@@ -57,7 +53,7 @@ for(i=0;i<minus.length;i++){
 
   function removePreview(div) {
     queue = queue.filter(function(element) {
-    return element.div != div; // ????
+    return element.div != div;
     });
 
     div.parentNode.removeChild(div);
@@ -72,7 +68,7 @@ for(i=0;i<minus.length;i++){
 
     queue.forEach(function(element) {
       data.append("images", element.file);
-    });  // ???  почему element.file это сам файл имг который нам нужен.
+    });
 
     xhr.open("post", "https://echo.htmlacademy.ru/adaptive?" + time);
     xhr.addEventListener("readystatechange", function(){
@@ -90,7 +86,7 @@ for(i=0;i<minus.length;i++){
 
       var files = this.files;
       for (var i = 0; i < files.length; i++) {
-        preview(files[i]);  // каждый файл(каждый элемент массива) запускает функцию превью
+        preview(files[i]);
       }
       this.value = "";
     });
@@ -99,11 +95,11 @@ for(i=0;i<minus.length;i++){
       var area = document.querySelector(".js-photo-wrap");
       var imgTemplate = document.querySelector("#image-template").innerHTML;
       if (file.type.match(/image.*/)){
-        var reader = new FileReader(); //  позволяет читать файлы, переделывает в base64
+        var reader = new FileReader();
 
-        reader.addEventListener("load", function(event){  // событие которое срабатывает когда файл загружен
+        reader.addEventListener("load", function(event){
 
-          var html = imgTemplate.replace("{{image}}", event.target.result); // target это элемент на котором произошло событие и у него есть свойтво резалт в котором будет наша картинка
+          var html = imgTemplate.replace("{{image}}", event.target.result);
           html = html.replace("{{name}}", file.name);
 
           var div = document.createElement("div");
@@ -111,7 +107,7 @@ for(i=0;i<minus.length;i++){
           div.innerHTML = html;
           area.appendChild(div);
 
-          queue.push({file: file, div: div}); //???
+          queue.push({file: file, div: div});
 
           div.querySelector(".form-photo__btn").addEventListener("click", function(event){
             event.preventDefault();
@@ -120,7 +116,7 @@ for(i=0;i<minus.length;i++){
 
         });
 
-        reader.readAsDataURL(file); // спец метод который может прочитать данные с файла который браузер подготовил
+        reader.readAsDataURL(file);
       }
     }
   }
