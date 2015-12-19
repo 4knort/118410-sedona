@@ -18,8 +18,10 @@
       vertical-align:baseline;
       margin-bottom:0;
       width:50%;
-      &:last-child{
-        margin-right:0;
+      padding:0 22px;
+      box-sizing:border-box;
+      &:nth-child(2n){
+        text-align:right;
       }
     }
   }
@@ -28,5 +30,11 @@
 @media(min-width: @tablet){
   .radio-list{
     text-align:center;
+    &__item{
+      padding:0;
+      &:nth-child(2n){
+        text-align:center;
+      }
+    }
   }
 }

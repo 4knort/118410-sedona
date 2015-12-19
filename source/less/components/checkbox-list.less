@@ -9,18 +9,26 @@
 
 @media(min-width: @mobile){
   .checkbox-list{
+    text-align:center;
     &__item{
       display:inline-block;
       vertical-align:top;
       width:50%;
+      box-sizing:border-box;
+      padding:0 25px;
+      &:nth-child(2n){
+        text-align:left;
+      }
     }
   }
 }
 
 @media(min-width: @tablet){
   .checkbox-list{
+    text-align:left;
     &__item{
       width:25%;
+      padding:0;
     }
   }
-}
+}
