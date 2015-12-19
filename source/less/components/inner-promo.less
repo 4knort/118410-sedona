@@ -1,7 +1,6 @@
 .inner-promo{
-  background-color:#ddebf4;
   background:url(../img/bg-intro-bottom.png) no-repeat left 102.8%,
-  url(../img/photo-background@1x.jpg) no-repeat 0 0;
+  #ddebf4 url(../img/photo-background@1x.jpg) no-repeat 0 0;
   background-size:100%, cover;
   position:relative;
   overflow:hidden;
@@ -24,9 +23,10 @@
 
 @media(min-width: @mobile){
   .inner-promo{
-    background:url(../img/bg-intro-bottom-tablet.png) no-repeat left 100.7%,
-    url(../img/photo-background@1x.jpg) no-repeat 0 -150px;
-    background-size:100%, cover;
+    background:url(../img/intro-triangle.svg) no-repeat left 100.7%,
+    #ddebf4 url(../img/photo-background@1x.jpg) no-repeat 0 -150px;
+    background-size:102%, cover;
+    background-position:center bottom, center;
     height:290px;
     margin-bottom:65px;
     &__text{
@@ -57,5 +57,14 @@
         margin-bottom:51px;
       }
     }
+  }
+}
+
+@media(min-resolution: 2dppx){
+  .inner-promo{
+    background:url(../img/intro-triangle.svg) no-repeat left 100.7%,
+    #ddebf4 url(../img/photo-background@2x.jpg) no-repeat 0 0;
+    background-size:105%, cover;
+    background-position:center bottom, center;
   }
 }

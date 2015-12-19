@@ -1,5 +1,6 @@
 .form-amount{
   border-bottom:1px solid #e5e5e5;
+  padding-left:10px;
   &__item{
     margin-bottom:16px;
     &--first{
@@ -12,7 +13,7 @@
     text-align:center;
   }
   &__item-description{
-    width:214px;
+    width:77%;
     float:left;
   }
 }
@@ -22,6 +23,7 @@
     font-size:0;
     border-bottom:none;
     margin-bottom:47px;
+    padding-left:0;
     &__item{
       margin-bottom:11px;
       &--first{
@@ -34,7 +36,7 @@
     &__item-description{
       width:auto;
       float:none;
-      margin-left:80px;
+      margin-left:66px;
     }
   }
 }
@@ -42,5 +44,8 @@
 @media(min-width: @tablet){
   .form-amount{
     margin-bottom:48px;
+    &__item-description{
+      margin-left:80px;
+    }
   }
 }

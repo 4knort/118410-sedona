@@ -1,9 +1,10 @@
 .form-input{
+  box-sizing:border-box;
   display:inline-block;
   vertical-align:baseline;
   font-family:@font-family;
   line-height:@line-height-input;
-  width:240px;
+  width:100%;
   padding:14px 20px;
   font-size:@font-title;
   outline:none;
@@ -27,8 +28,20 @@
     }
   }
   &--amount{
-    width:171px;
+    width:100%;
   }
+}
+::-webkit-input-placeholder{
+  color:#000;
+}
+::-moz-placeholder{
+  color:#000;
+}
+:-moz-placeholder{
+  color:#000;
+}
+:-ms-input-placeholder{
+  color:#000;
 }
 
 @media(min-width: @mobile){
