@@ -1,7 +1,6 @@
 .index-promo{
-  background-color:#ddebf4;
   background:url(../img/bg-intro-bottom.png) no-repeat left 100.7%,
-  url(../img/photo-background@1x.jpg) no-repeat 0 0;
+  #ddebf4 url(../img/photo-background@1x.jpg) no-repeat 0 0;
   background-size:100%, cover;
   position:relative;
   overflow:hidden;
@@ -36,7 +35,7 @@
 @media (min-width: @mobile){
   .index-promo{
     background:url(../img/intro-triangle.svg) no-repeat left 100.5%,
-    url(../img/photo-background@1x.jpg) no-repeat 0 0;
+    #ddebf4 url(../img/photo-background@1x.jpg) no-repeat 0 0;
     background-size:102%, cover;
     background-position:center bottom, center;
     height:510px;
@@ -69,7 +68,9 @@
 
 @media(min-resolution: 2dppx){
   .index-promo{
-    background:url(../img/photo-background@2x.jpg) no-repeat 0 0;
-    background-size:100%, cover;
+    background:url(../img/intro-triangle.svg) no-repeat left 100.7%,
+    #ddebf4 url(../img/photo-background@2x.jpg) no-repeat 0 0;
+    background-size:102%, cover;
+    background-position:center bottom, center;
   }
 }
